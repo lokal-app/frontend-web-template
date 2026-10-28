@@ -25,7 +25,7 @@ Single project: a React 19 + Vite 8 + Tailwind CSS v4 starter template (JavaScri
 ## 5. GitHub Actions
 
 - **Found:** No `.github/workflows/`. `master` is the only branch on the remote; there is no separate dev or staging branch.
-- **Fixed:** Added `.github/workflows/ci.yml`, which runs `npm ci`, `npm run lint` and `npm run build` on Node 22 for pushes and pull requests to `master`. If a dev or staging branch is created later, add it to the workflow.
+- **Fixed:** Added `.github/workflows/ci.yml` with separate `lint` and `build` jobs (Node 22, `npm ci`) that run for pushes and pull requests to `master`. If a dev or staging branch is created later, add it to the workflow.
 
 ## Other changes and open items
 
