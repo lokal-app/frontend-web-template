@@ -1,10 +1,14 @@
 name: CI
 
 on:
+  # Only master: changes reach staging through PRs, which already run CI here.
   push:
-    branches: [master]
+    branches:
+      - master
   pull_request:
-    branches: [master]
+    branches:
+      - master
+      - staging
 
 jobs:
   lint:
