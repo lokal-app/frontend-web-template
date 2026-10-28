@@ -40,6 +40,8 @@ There is no test suite yet. CI (`.github/workflows/ci.yml`) runs `lint` and `bui
 
 None are required. If you add any, prefix them with `VITE_` so Vite exposes them to the client, document them in `.env.example`, and keep your real values in an untracked `.env` file.
 
+Vite inlines `VITE_` values into the client bundle, so anyone can read them. Use them only for public values such as API base URLs. Never put API keys, tokens or other secrets in them; those belong on a backend.
+
 ## React Compiler
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
