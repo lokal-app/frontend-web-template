@@ -1,24 +1,44 @@
-# React Webview Template
+# Frontend Web Template
 
 A minimal React + Vite + Tailwind CSS starter template with HMR and Oxlint, meant as a clean base for people starting out with web development.
+
+## Tech Stack
+
+- React 19 (JavaScript / JSX, functional components)
+- Vite 8 with `@vitejs/plugin-react`
+- Tailwind CSS v4 via `@tailwindcss/vite`
+- Oxlint for linting
+- `@/` import alias for `src/` (configured in `vite.config.js` and `jsconfig.json`)
 
 ## Getting Started
 
 Scaffold a new project from this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```sh
-npx degit lokal-app/react-webview-template my-webview-app
-cd my-webview-app
+npx degit lokal-app/frontend-web-template my-web-app
+cd my-web-app
 npm install
 npm run dev
 ```
 
+To work on the template itself, clone it and run `npm install` instead.
+
 This template ships with a `CLAUDE.md` defining the project's engineering guidelines (project structure, naming conventions, dependency policy, etc.). If you're using Claude Code, read and follow those rules when building on top of this template.
 
-Currently, two official plugins are available:
+## Scripts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Command           | What it does                              |
+| ----------------- | ----------------------------------------- |
+| `npm run dev`     | Start the Vite dev server with HMR        |
+| `npm run build`   | Build for production into `dist/`         |
+| `npm run preview` | Serve the production build locally        |
+| `npm run lint`    | Lint the project with Oxlint              |
+
+There is no test suite yet. CI (`.github/workflows/ci.yml`) runs `lint` and `build` on pushes and pull requests to `master`.
+
+## Environment Variables
+
+None are required. If you add any, prefix them with `VITE_` so Vite exposes them to the client, document them in `.env.example`, and keep your real values in an untracked `.env` file.
 
 ## React Compiler
 

@@ -1,16 +1,16 @@
+> The goal is to produce code that is:
+>
+> - Maintainable
+> - Readable
+> - Consistent
+> - Reusable where appropriate
+> - Easy to extend
+> - Safe to modify
+
 # Project Engineering Guidelines
 
 This document defines the engineering standards for this repository. 
 **Do not edit this Markdown file.**
-
-The goal is to produce code that is:
-
-- Maintainable
-- Readable
-- Consistent
-- Reusable where appropriate
-- Easy to extend
-- Safe to modify
 
 Follow these guidelines when creating or modifying code.
 
