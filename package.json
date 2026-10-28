@@ -1,12 +1,8 @@
 {
-  "name": "create-react-webview-module",
+  "name": "create-frontend-web-template",
   "version": "0.0.0",
   "type": "module",
-  "bin": {
-    "create-react-webview-module": "./bin/create.js"
-  },
   "files": [
-    "bin",
     "src",
     "public",
     "index.html",
